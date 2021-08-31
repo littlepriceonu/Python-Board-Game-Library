@@ -124,7 +124,7 @@ class BoardGame:
         except:
             return "notpog"
 
-    ## Todo: Make This thing better 
+    ## Todo: Make This thing better (read readme.md) 
     def save(self, filename):
         try:
             with open(filename, "x") as file:
