@@ -22,7 +22,7 @@ print("----------------\n")
 BG.printloadertablehealth(loader)
 
 
-BG.save("sf")
+BG.save("sf") ## Sf would be a file that looks like "i" but without the name and the [ and ]
 
 def setxy(self, x, y, table, setto):
 	table[(y-1) * self.exit + x] = setto
