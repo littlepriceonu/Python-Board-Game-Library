@@ -15,11 +15,12 @@ loader = BG.makeloader(i, 9)
 
 print(BG.getxy(5, 4, i))
 
-BG.printloadertablepos(loader)
+BG.printloadertablename(loader)
 
 print("----------------\n")
 
 BG.printloadertablehealth(loader)
+
 
 BG.save("sf")
 
