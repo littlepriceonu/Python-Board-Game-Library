@@ -5,9 +5,9 @@
 
 This Libary Was Designed For My School Year End Project. I decided To Expand Opon It!
 
-# See example.py for how to use
+See example.py for an example on how to use
 
-## Todo;
+## Todo:
 
 If you'd like to commit something, Heres what I'd like to do. If you have any ideas for a good update, Please contact me
 
