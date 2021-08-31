@@ -117,7 +117,7 @@ class BoardGame:
     def getexit(self):
         return self.exit
 
-    ## Basically, Just give it the x, y and table and it finds the respective item. (Name not included)
+    ## Basially, Just give it the x, y and table and it finds the respective item. (Name not included)
     def getxy(self, x, y, table):
         try:
             return table[(y-1) * self.exit + x]
