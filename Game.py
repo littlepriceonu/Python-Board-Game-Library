@@ -16,6 +16,7 @@ class BoardGame:
     def loadloader(self, loader):
         self.loader = loader
 
+    ## Todo: Work on this. Make It a main feature
     def loadfromfile(self, filename):
         table = ""
         try:
