@@ -6,6 +6,23 @@ class BoardGame:
     def __init__(self, loader):
         self.loader = loader
 
+    ## Makes A certain "cell" in the table to
+    def startwmovement(self, tomovex, tomovey):
+        self.setxy(tomovex, tomovey+1, self.loader, self.getxy(tomovex, tomovey, self.loader))
+        self.setxy(tomovex, tomovey, self.loader, "0-0")
+
+    def startamovement(self, tomovex, tomovey):
+        self.setxy(tomovex-1, tomovey, self.loader, self.getxy(tomovex, tomovey, self.loader))
+        self.setxy(tomovex, tomovey, self.loader, "0-0")
+
+    def startsmovement(self, tomovex, tomovey):
+        self.setxy(tomovex, tomovey-1, self.loader, self.getxy(tomovex, tomovey, self.loader))
+        self.setxy(tomovex, tomovey, self.loader, "0-0")
+
+    def startdmovement(self, tomovex, tomovey):
+        self.setxy(tomovex+1, tomovey, self.loader, self.getxy(tomovex, tomovey, self.loader))
+        self.setxy(tomovex, tomovey, self.loader, "0-0")
+
     ## !This is just the old version of the makeloader()!     
     ## Didn't wanna keep making ugly tables so I made this function. the x is well... the X and same with the y. The name is just the name of the table
     ##def maketable(self, x, y, name):
@@ -122,7 +139,7 @@ class BoardGame:
         try:
             return table[(y-1) * self.exit + x]
         except:
-            return "notpog"
+            return "Couldn't Find The Cell"
 
     ## Todo: Make This thing better (read readme.md) 
     def save(self, filename):
